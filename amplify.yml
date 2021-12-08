@@ -3,7 +3,7 @@ frontend:
   phases:
     preBuild:
       commands:
-        - echo {"BackendStack":{"apiName":$TODOLIST_API_NAME, "apiendpoint":$TODOLIST_API_URL, "awscognitoregion":$TODO_REGION, "userpool":$USERPOOL_ID, "webclientid":$WEB_CLIENT_ID, "identitypool":$IDENTITYPOOL_ID }} > src/cdk-exports.json
+        - echo "{\"BackendStack\":{\"apiName\":$TODOLIST_API_NAME, \"apiendpoint\":$TODOLIST_API_URL, \"awscognitoregion\":$TODO_REGION, \"userpool\":$USERPOOL_ID, \"webclientid\":$WEB_CLIENT_ID, \"identitypool\":$IDENTITYPOOL_ID }}" > src/cdk-exports.json
     build:
       commands:
         - npm install
