@@ -5,6 +5,7 @@ frontend:
       commands:
         - npm ci
         - bash env2json.sh
+        - cat src/cdk-exports.json
     build:
       commands:
         - npm run build
