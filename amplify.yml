@@ -3,8 +3,7 @@ frontend:
   phases:
     preBuild:
       commands:
-        - chmod a+x env2json.sh
-        - ./env2json.sh
+        - bash env2json.sh
         - more src/cdk-exports.json
     build:
       commands:
