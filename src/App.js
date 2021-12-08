@@ -29,13 +29,14 @@ import { Grid } from '@material-ui/core'
 import { Amplify, Hub } from 'aws-amplify';
 // Retrieve confirguation info from aws-exports and cdk-exports
 import config from './aws-exports';
-import { BackendStack } from "./cdk-exports.json"
+// import { BackendStack } from "./cdk-exports.json"
 
 // import the Authenticator and ui for react
 import { Authenticator } from '@aws-amplify/ui-react';
 import '@aws-amplify/ui-react/styles.css';
 
 // setup configurations
+/*
 const cdkConfig = {
   API: {
     endpoints: [
@@ -50,9 +51,11 @@ const cdkConfig = {
   aws_user_pools_web_client_id: BackendStack.webclientid,
   aws_cognito_identity_pool_id: BackendStack.identitypool,
 }
+Amplify.configure(cdkConfig);
+*/
 
 Amplify.configure(config);
-Amplify.configure(cdkConfig);
+
 
 function App() {
 
