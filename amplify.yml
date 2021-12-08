@@ -5,6 +5,7 @@ frontend:
       commands:
         - echo $TODOLIST_API_NAME
         - npm install
+        - amplify pull --yes
     build:
       commands:
         - npm run build
