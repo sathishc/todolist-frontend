@@ -3,7 +3,7 @@ frontend:
   phases:
     preBuild:
       commands:
-        - echo $AWS_API_NAME
+        - echo $TODOLIST_API_NAME
     build:
       commands:
         - npm run build
