@@ -3,7 +3,8 @@ frontend:
   phases:
     preBuild:
       commands:
-        - echo "{\"BackendStack\":{\"apiName\":$TODOLIST_API_NAME, \"awscognitoregion\":$TODO_REGION, \"userpool\":$USERPOOL_ID, \"webclientid\":$WEB_CLIENT_ID, \"identitypool\":$IDENTITYPOOL_ID, \"apiendpoint\":$TODOLIST_API_URL}}" > src/cdk-exports.json
+        - chmod a+x env2json.sh
+        - ./env2json.sh
         - more src/cdk-exports.json
     build:
       commands:
