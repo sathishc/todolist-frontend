@@ -3,10 +3,8 @@ frontend:
   phases:
     preBuild:
       commands:
-        - echo $TODOLIST_API_NAME
         - echo "{BackendStack.apiName:$TODOLIST_API_NAME, BackendStack.apiendpoint:$TODOLIST_API_URL, BackendStack.awscognitoregion:$TODO_REGION, BackendStack.userpool:$USERPOOL_ID, BackendStack.webclientid:$WEB_CLIENT_ID, BackendStack.identitypool:$IDENTITYPOOL_ID }" > src/exports.json
         - more src/exports.json
-        - ls -al src/
     build:
       commands:
         - npm install
