@@ -3,11 +3,12 @@ frontend:
   phases:
     preBuild:
       commands:
+        - ls
         - bash env2json.sh
         - more src/cdk-exports.json
+        - npm ci
     build:
       commands:
-        - npm install
         - npm run build
   artifacts:
     baseDirectory: build
