@@ -28,7 +28,7 @@ import { Grid } from '@material-ui/core'
 // import Amplift and Hub
 import { Amplify, Hub } from 'aws-amplify';
 // Retrieve confirguation info from aws-exports and cdk-exports
-import config from './aws-exports';
+// import config from './aws-exports';
 // import { BackendStack } from "./cdk-exports.json"
 
 // import the Authenticator and ui for react
@@ -54,7 +54,7 @@ const cdkConfig = {
 Amplify.configure(cdkConfig);
 */
 
-Amplify.configure(config);
+// Amplify.configure(config);
 
 
 function App() {
