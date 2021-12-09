@@ -18,7 +18,7 @@
 
 import { API, Auth } from 'aws-amplify'
 
-const apiName = 'todolist-todoApi';
+const apiName = 'todoList-todoApi';
 const todosPath = '/todos'; 
 
 // This function is called immediately when the page loads, before populating the table with this data
